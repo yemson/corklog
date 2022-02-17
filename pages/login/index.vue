@@ -7,7 +7,7 @@
             <div class="font-extralight">
               CORK
             </div>
-            <div>
+            <div class="text-right">
               LOG
             </div>
           </nuxt-link>
@@ -23,6 +23,9 @@
         <button class="mt-8 py-2 w-full text-white rounded-md shadow-md bg-blue-500 hover:bg-blue-400 focus:ring focus:ring-blue-300">
           로그인
         </button>
+        <nuxt-link to="/signup" class="mt-1 float-right text-blue-500">
+          회원이 아니신가요?
+        </nuxt-link>
       </div>
     </form>
   </div>

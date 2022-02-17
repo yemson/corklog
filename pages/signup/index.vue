@@ -28,6 +28,9 @@
           <button class="mt-8 py-2 w-full text-white rounded-md shadow-md bg-blue-500 hover:bg-blue-400 focus:ring focus:ring-blue-300">
             회원가입
           </button>
+          <nuxt-link to="/login" class="mt-1 float-right text-blue-500">
+            이미 회원이신가요?
+          </nuxt-link>
         </div>
       </form>
     </div>
