@@ -8,20 +8,26 @@
         LOG
       </div>
     </div>
-    <div>
-      <button class="px-2.5 py-1.5 rounded-md hover:bg-gray-200 focus:ring focus:ring-gray-100">
+    <div v-if="auth == true">
+      <nuxt-link to="/signup">
         회원가입
-      </button>
-      <button class="ml-2 px-4 py-1.5 rounded-md text-white shadow-md bg-blue-500 hover:bg-blue-400 focus:ring focus:ring-blue-300">
+      </nuxt-link>
+      <nuxt-link to="/login" class="ml-3 px-4 py-2 rounded-md text-white shadow-md bg-blue-500 hover:bg-blue-400 focus:ring focus:ring-blue-300">
         로그인
-      </button>
+      </nuxt-link>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'NavBar'
+  name: 'NavBar',
+  props: {
+    auth: {
+      type: Boolean,
+      default: true
+    }
+  }
 }
 </script>
 
